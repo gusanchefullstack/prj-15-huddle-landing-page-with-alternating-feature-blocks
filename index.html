@@ -5,38 +5,52 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/32f374c92f.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div id="app" class="main-container">
-      <header>
+    <div id="app" class="text-lg font-openSans">
+      <header class="bg-veryPaleCyan bg-bgHeroMobile bg-no-repeat py-6 px-6">
         <div>
-          <div><img src="images/logo.svg" alt="" /></div>
-          <div>Try It Free</div>
-          <div>
-            <h1>Build The Community Your Fans Will Love</h1>
-            <p>
+          <div class="flex flex-nowrap justify-between items-center">
+            <div class="basis-1/3"><img src="images/logo.svg" alt="" /></div>
+            <div
+              class="basis-1/3 font-extrabold text-xs py-1 px-3 text-center rounded-full shadow-lg bg-white"
+            >
+              Try It Free
+            </div>
+          </div>
+          <div class="mt-20 text-center">
+            <h1 class="font-poppins text-2xl font-semibold">
+              Build The Community Your Fans Will Love
+            </h1>
+            <p class="description">
               Huddle re-imagines the way we build communities. You have a voice,
               but so does your audience. Create connections with your users as
               you engage in genuine discussion.
             </p>
-            <button>Get Started For Free</button>
+            <button class="pinky-button">Get Started For Free</button>
           </div>
           <div><img src="images/illustration-mockups.svg" alt="" /></div>
         </div>
       </header>
-      <main>
-        <article>
+      <main class="mt-16 mb-48 relative">
+        <article class="article-card">
           <div>
-            <div>
+            <div class="card-image">
               <img src="images/illustration-grow-together.svg" alt="" />
             </div>
             <div>
-              <h2>Grow Together</h2>
-              <p>
+              <h2 class="heading">Grow Together</h2>
+              <p class="description">
                 Generate meaningful discussions with your audience and build a
                 strong, loyal community. Think of the insightful conversations
                 you miss out on with a feedback form.
@@ -44,14 +58,14 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="article-card">
           <div>
-            <div>
+            <div class="card-image">
               <img src="images/illustration-flowing-conversation.svg" alt="" />
             </div>
             <div>
-              <h2>Flowing Conversations</h2>
-              <p>
+              <h2 class="heading">Flowing Conversations</h2>
+              <p class="description">
                 You wouldn't paginate a conversation in real life, so why do it
                 online? Our threads have just-in-time loading for a more natural
                 flow.
@@ -59,14 +73,14 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="article-card">
           <div>
-            <div>
+            <div class="card-image">
               <img src="images/illustration-your-users.svg" alt="" />
             </div>
             <div>
-              <h2>Your Users</h2>
-              <p>
+              <h2 class="heading">Your Users</h2>
+              <p class="description">
                 It takes no time at all to integrate Huddle with your app's
                 authentication solution. This means, once signed in to your app,
                 your users can start chatting immediately.
@@ -74,55 +88,75 @@
             </div>
           </div>
         </article>
-        <article>
-          <div>
-            <h2>Ready To Build Your Community?</h2>
-            <button>Get Started For Free</button>
+        <article
+          class="absolute w-11/12 mx-4 -bottom-72 border border-gray-200 bg-white rounded-xl my-8 px-4 py-8"
+        >
+          <div class="text-center">
+            <h2 class="text-lg font-bold mb-6">
+              Ready To Build Your Community?
+            </h2>
+            <button
+              class="bg-pinky rounded-full px-12 py-3 text-xs font-semibold text-veryPaleCyan shadow-gray-400 shadow-md mb-4"
+            >
+              Get Started For Free
+            </button>
           </div>
         </article>
       </main>
-      <footer>
+      <footer class="bg-veryDarkCyan pt-36 px-4 text-veryPaleCyan">
         <div>
           <img src="images/logo.svg" alt="" />
         </div>
 
         <div>
           <div>
-            <div>
-              <div><img src="images/icon-location.svg" alt="" /></div>
+            <div
+              class="flex flex-nowrap space-x-6 justify-center items-start mt-8"
+            >
+              <div>
+                <img class="w-12 h-5" src="images/icon-location.svg" alt="" />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
             </div>
-            <div>
+            <div
+              class="flex flex-nowrap space-x-6 justify-start items-start mt-8"
+            >
               <div><img src="images/icon-phone.svg" alt="" /></div>
               <p>+1-543-123-4567</p>
             </div>
-            <div>
+            <div
+              class="flex flex-nowrap space-x-6 justify-start items-start mt-8"
+            >
               <div><img src="images/icon-email.svg" alt="" /></div>
               <p>example@huddle.com</p>
             </div>
           </div>
 
-          <ul>
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>FAQ</li>
+          <ul class="pt-16">
+            <li class="mb-4">About Us</li>
+            <li class="mb-4">What We Do</li>
+            <li class="mb-4">FAQ</li>
           </ul>
           <ul>
-            <li>Career</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
+            <li class="mb-4">Career</li>
+            <li class="mb-4">Blog</li>
+            <li class="mb-4">Contact Us</li>
           </ul>
-          <ul>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
+          <ul
+            class="flex flex-nowrap items-center justify-center space-x-4 mt-16"
+          >
+            <li class="social-icon"><i class="fab fa-facebook-f"></i></li>
+            <li class="social-icon"><i class="fab fa-twitter"></i></li>
+            <li class="social-icon"><i class="fab fa-instagram"></i></li>
           </ul>
         </div>
 
-        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+        <p class="text-xs text-center pt-8 pb-16">
+          &copy; Copyright 2018 Huddle. All rights reserved.
+        </p>
       </footer>
     </div>
 
