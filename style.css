@@ -4,7 +4,7 @@
 
 @layer components {
   .description {
-    @apply text-center font-normal text-sm py-5 px-4 leading-6 text-grayishBlue;
+    @apply text-center font-normal text-sm py-5 px-4 leading-6 text-grayishBlue lg:text-left lg:px-0;
   }
   .article-card {
     @apply border border-gray-200 bg-white rounded-xl shadow-gray-300 shadow-md mx-6 my-8 px-4 py-8;

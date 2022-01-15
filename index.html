@@ -20,28 +20,40 @@
   </head>
   <body>
     <div id="app" class="text-lg font-openSans">
-      <header class="bg-veryPaleCyan bg-bgHeroMobile bg-no-repeat py-6 px-6">
+      <header
+        class="bg-veryPaleCyan bg-bgHeroMobile bg-no-repeat py-6 px-6 lg:px-20 lg:py-10 lg:bg-bgHeroDesktop"
+      >
         <div>
           <div class="flex flex-nowrap justify-between items-center">
-            <div class="basis-1/3"><img src="images/logo.svg" alt="" /></div>
+            <div class="basis-1/3 lg:basis-2/12">
+              <img src="images/logo.svg" alt="" />
+            </div>
             <div
-              class="basis-1/3 font-extrabold text-xs py-1 px-3 text-center rounded-full shadow-lg bg-white hover:cursor-pointer"
+              class="basis-1/3 lg:basis-2/12 font-extrabold text-xs py-1 px-4 lg:py-3 lg:px-6 text-center rounded-full shadow-lg bg-white hover:cursor-pointer"
             >
               Try It Free
             </div>
           </div>
-          <div class="mt-20 text-center">
-            <h1 class="font-poppins text-2xl font-semibold">
-              Build The Community Your Fans Will Love
-            </h1>
-            <p class="description">
-              Huddle re-imagines the way we build communities. You have a voice,
-              but so does your audience. Create connections with your users as
-              you engage in genuine discussion.
-            </p>
-            <button class="pinky-button">Get Started For Free</button>
+          <div
+            class="lg:mt-20 lg:flex lg:flex-nowrap lg:justify-center lg:items-center space-x-4"
+          >
+            <div class="mt-20 text-center lg:text-left lg:basis-1/2 lg:pr-40">
+              <h1
+                class="font-poppins text-2xl font-semibold lg:text-4xl lg:text-left lg:leading-relaxed"
+              >
+                Build The Community Your Fans Will Love
+              </h1>
+              <p class="description">
+                Huddle re-imagines the way we build communities. You have a
+                voice, but so does your audience. Create connections with your
+                users as you engage in genuine discussion.
+              </p>
+              <button class="pinky-button">Get Started For Free</button>
+            </div>
+            <div class="lg:basis-1/2">
+              <img src="images/illustration-mockups.svg" alt="" />
+            </div>
           </div>
-          <div><img src="images/illustration-mockups.svg" alt="" /></div>
         </div>
       </header>
       <main class="mt-16 mb-48 relative">

@@ -14,6 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         bgHeroMobile: "url(/images/bg-hero-mobile.svg)",
+        bgHeroDesktop: "url(/images/bg-hero-desktop.svg)",
       },
     },
   },
